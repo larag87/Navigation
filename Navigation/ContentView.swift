@@ -12,12 +12,19 @@ struct ContentView: View {
             NavigationStack {
                 VStack {
                     Text("This is the root view 🌳")
-                    NavigationLink(destination: SecondView()) {
-                        Text("Click me!")//label content shows user the link
-                    }
+                    //NavigationLink(destination: SecondView()) {
+                      //  Text("Click me!")//label content shows user the link
+                  //  }
                     
-                    NavigationLink(destination: Text("Welcome to the 3rd View!")) {
-                        Text("Or click this one?") }
+                    NavigationLink(destination: ThirdView()) {
+                        Text("About") }
+                    
+                    NavigationLink(destination: Text("Contact Us Here: ###-###-####")) {
+                        Text("Contacts") }
+                    
+                    NavigationLink(destination: Text("What do you need help with?")) {
+                        Text("Help?") }
+                    
                     }//end of Vstack
                     
                 .navigationTitle("Home")
